@@ -1,0 +1,17 @@
+{
+  "name": "Wisdom Portfolio",
+  "short_name": "Portfolio",
+  "description": "Portfolio website",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8d86c9",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+
