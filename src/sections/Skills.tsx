@@ -32,7 +32,7 @@ export default function Skills() {
       title: "Mobile",
       skills: [
         { name: "Expo React Native", percentage: 85 },
-        { name: "iOS/Swift", percentage: 0 },
+        { name: "iOS / Swift", percentage: 0 },
         { name: "Android/Kotlin", percentage: 0 },
       ],
     },
@@ -92,9 +92,9 @@ export default function Skills() {
           {/* <h1 className="text-6xl md:text-6xl font-bold relative z-10">
             Skills
           </h1> */}
-          <h1 className="shine-effect text-5xl md:text-[6rem] font-bold absolute top-0 left-0 -z-0">
+          <h2 className="shine-effect text-5xl md:text-5xl font-bold absolute top-0 left-0 -z-0">
             Skills
-          </h1>
+          </h2>
         </div>
 
         {/* Skills Grid */}
@@ -107,7 +107,7 @@ export default function Skills() {
               {/* Icon and Title */}
               <div className="mb-6">
                 <div className="mb-3">
-                  <category.icon className="w-10 h-10 text-[#96031A]" />
+                  <category.icon className="size-8 text-[#96031A]" />
                 </div>
                 <h3 className="text-2xl text-[#96031A] font-bold">{category.title}</h3>
               </div>

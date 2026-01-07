@@ -71,9 +71,9 @@ export default function Technologies() {
       <div className="max-w-7xl mx-auto">
         {/* Header with large title */}
         <div className="relative mb-20">
-          <h1 className="shine-effect text-5xl md:text-[6rem] font-bold absolute top-0 left-0 -z-0">
+          <h2 className="shine-effect text-5xl md:text-5xl font-bold absolute top-0 left-0 -z-0">
             Tech Stack
-          </h1>
+          </h2>
         </div>
 
         {/* My Arsenal Button */}
@@ -98,7 +98,7 @@ export default function Technologies() {
             {technologies.slice(0, 11).map((tech, index) => (
               <div
                 key={index}
-                className="group flex items-center justify-center w-20 h-20 transition-transform duration-300 hover:scale-110"
+                className="group flex items-center justify-center size-14 transition-transform duration-300 hover:scale-110"
               >
                 <img
                   src={tech.icon}
@@ -113,7 +113,7 @@ export default function Technologies() {
             {technologies.slice(11).map((tech, index) => (
               <div
                 key={index + 11}
-                className="group flex items-center justify-center w-20 h-20 transition-transform duration-300 hover:scale-110"
+                className="group flex items-center justify-center size-18 transition-transform duration-300 hover:scale-110"
               >
                 <img
                   src={tech.icon}

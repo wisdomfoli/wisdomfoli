@@ -7,9 +7,9 @@ export default function About() {
           {/* <h1 className="text-6xl md:text-6xl font-bold relative z-10">
             About
           </h1> */}
-          <h1 className="shine-effect text-5xl md:text-[6rem] font-bold absolute top-0 left-0 -z-0">
+          <h2 className="shine-effect text-5xl md:text-5xl font-bold absolute top-0 left-0 -z-0">
             About Me
-          </h1>
+          </h2>
         </div>
 
         {/* Main Content - 2 Cards */}
