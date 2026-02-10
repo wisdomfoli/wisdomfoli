@@ -1,5 +1,5 @@
 import { Download } from "lucide-react";
-import cvPdf from "../assets/files/Wisdom Foli CV.pdf (4).pdf";
+import cvPdf from "../assets/files/Wisdom's Cv.pdf";
 
 export default function Resume() {
   const experienceItems = [
