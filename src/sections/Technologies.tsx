@@ -1,20 +1,27 @@
+import reactIcon from "../assets/icons/react.svg";
+import javaIcon from "../assets/icons/java.svg";
+import mongodbIcon from "../assets/icons/mongodb.svg";
+import postgresqlIcon from "../assets/icons/postgresql.svg";
+import dockerIcon from "../assets/icons/docker.svg";
+import gitIcon from "../assets/icons/git.svg";
+
 export default function Technologies() {
   const technologies = [
     {
       name: "React",
-      icon: "/src/assets/icons/react.svg",
+      icon: reactIcon,
     },
     {
       name: "Java",
-      icon: "/src/assets/icons/java.svg",
+      icon: javaIcon,
     },
     {
       name: "MongoDB",
-      icon: "/src/assets/icons/mongodb.svg",
+      icon: mongodbIcon,
     },
     {
       name: "PostgreSQL",
-      icon: "/src/assets/icons/postgresql.svg",
+      icon: postgresqlIcon,
     },
     {
       name: "Node.js",
@@ -30,11 +37,11 @@ export default function Technologies() {
     },
     {
       name: "Docker",
-      icon: "/src/assets/icons/docker.svg",
+      icon: dockerIcon,
     },
     {
       name: "Git",
-      icon: "/src/assets/icons/git.svg",
+      icon: gitIcon,
     },
     {
       name: "GitHub",
