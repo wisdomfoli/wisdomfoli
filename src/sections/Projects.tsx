@@ -58,7 +58,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="animate-section text-black py-16 px-8">
+    <section id="projects" className="animate-section text-[#FAFAFA] py-16 px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header with large title */}
         <div className="relative mb-20">
@@ -72,15 +72,15 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="animate-card bg-gray-50 rounded-lg p-6 border border-gray-200"
+              className="animate-card bg-[#111111] rounded-lg p-6 border border-gray-600"
             >
               {/* Title */}
-              <h2 className="text-2xl font-bold mb-4 text-[#96031A]">
+              <h2 className="text-2xl font-bold mb-4 text-[#7f22ff]">
                 {project.title}
               </h2>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">
                 {project.description}
               </p>
 
@@ -89,7 +89,7 @@ export default function Projects() {
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-4 py-2 bg-white text-gray-700 text-xs rounded-full border border-[#96031A]"
+                    className="px-4 py-2 bg-gray-700 text-gray-200 text-xs rounded-full border border-[#7f22ff]"
                   >
                     {tech}
                   </span>
@@ -100,16 +100,16 @@ export default function Projects() {
               <div className="flex gap-4">
                 {/* <a
                   href={project.codeUrl}
-                  className="flex items-center gap-2 text-gray-600 hover:text-black transition-colors text-sm"
+                  className="flex items-center gap-2 text-gray-300 hover:text-[#FAFAFA] transition-colors text-sm"
                 >
-                  <Github className="w-4 h-4 text-[#96031A]" />
+                  <Github className="w-4 h-4 text-[#7f22ff]" />
                   <span>Code</span>
                 </a> */}
                 <a
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-600 hover:text-black transition-colors text-sm"
+                  className="flex items-center gap-2 text-gray-300 hover:text-[#FAFAFA] transition-colors text-sm"
                 >
                   <ExternalLink className="w-4 h-4 text-[#96031A]" />
                   <span>Demo</span>

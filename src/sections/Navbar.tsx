@@ -41,7 +41,7 @@ export default function Navbar() {
                 onClick={(e) => handleClick(e, link.id)}
                 className={`px-4 py-1.5 text-sm font-medium transition-colors cursor-pointer ${
                   isActive(link.id)
-                    ? "rounded-full text-[#B4041E]"
+                    ? "rounded-full text-[#7f22ff]"
                     : "text-stone-100 hover:text-white"
                 }`}
               >

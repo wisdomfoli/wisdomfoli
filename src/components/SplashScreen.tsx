@@ -117,13 +117,13 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
   if (!isVisible) return null;
 
   return (
-    <div className="splash-container fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
+    <div className="splash-container fixed inset-0 bg-[#0A0A0A] z-50 flex flex-col items-center justify-center">
       <div className="flex items-center justify-center gap-2 mb-8">
         {name.split("").map((letter, index) => (
           <span
             key={index}
             id={`letter-${index}`}
-            className="letter text-7xl md:text-8xl lg:text-9xl font-bold text-[#96031A]"
+            className="letter text-7xl md:text-8xl lg:text-9xl font-bold text-[#7f22ff]"
             style={{
               display: "inline-block",
             }}
@@ -138,7 +138,7 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
           {[0, 1, 2].map((index) => (
             <span
               key={index}
-              className="loading-dot w-4 h-4 bg-[#96031A] rounded-full opacity-0"
+              className="loading-dot w-4 h-4 bg-[#7f22ff] rounded-full opacity-0"
               style={{
                 transform: "scale(0)",
               }}

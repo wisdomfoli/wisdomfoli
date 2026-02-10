@@ -48,7 +48,7 @@ export default function Resume() {
   return (
     <section
       id="summary"
-      className="animate-section text-black min-h-screen py-16 px-8"
+      className="animate-section text-[#FAFAFA] py-16 px-8"
     >
       <div className="max-w-7xl mx-auto">
         {/* Header with large title */}
@@ -64,22 +64,22 @@ export default function Resume() {
             {experienceItems.map((experience, index) => (
               <div
                 key={index}
-                className="animate-card bg-gray-50 rounded-lg p-6 border border-gray-200"
+                className="animate-card bg-[#111111] rounded-lg p-6 border border-gray-600"
               >
-                <div className="text-[#96031A] font-semibold mb-2">
+                <div className="text-[#7f22ff] font-semibold mb-2">
                   {experience.date}
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-[#96031A]">
+                <h3 className="text-xl font-bold mb-4 text-[#7f22ff]">
                   {experience.title}, {experience.institution}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                <p className="text-white text-sm leading-relaxed mb-4">
                   {experience.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {experience.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-4 py-2 bg-white text-gray-700 text-xs rounded-full border border-[#96031A]"
+                      className="px-4 py-2 bg-gray-700 text-white text-sm rounded-full border border-gray-600"
                     >
                       {tech}
                     </span>
@@ -95,7 +95,7 @@ export default function Resume() {
           <a
             href={cvPdf}
             download="Wisdom Foli CV.pdf"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#96031A] text-white rounded-full hover:bg-[#96031A]/80] transition-colors font-medium text-lg"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[#7f22ff] text-white rounded-full hover:bg-[#7f22ff]/80] transition-colors font-medium text-lg"
           >
             <Download className="w-5 h-5" />
             <span>Download CV</span>

@@ -5,6 +5,7 @@ import Technologies from "../sections/Technologies";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Projects from "../sections/Projects";
+import Contact from "../sections/Contact";
 import ContactModal from "../sections/ContactModal";
 import Footer from "../sections/Footer";
 import { useSmoothScroll } from "../hooks/useSmoothScroll";
@@ -25,9 +26,8 @@ export default function Home() {
       <Resume />
       <Skills />
       <Technologies />
-      {/* <Projects /> */}
+      <Contact />
       <Footer />
-      <ContactModal />
     </>
   );
 }

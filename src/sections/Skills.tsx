@@ -85,7 +85,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <section ref={sectionRef} id="skills" className="animate-section text-black py-16 px-8">
+    <section ref={sectionRef} id="skills" className="animate-section text-[#FAFAFA] py-16 px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header with large title */}
         <div className="relative mb-20">
@@ -102,14 +102,14 @@ export default function Skills() {
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-gray-50 rounded-lg p-6 border border-gray-200"
+              className="bg-[#111111] rounded-lg p-6 border border-gray-600"
             >
               {/* Icon and Title */}
               <div className="mb-6">
                 <div className="mb-3">
-                  <category.icon className="size-8 text-[#96031A]" />
+                  <category.icon className="size-8 text-[#7f22ff]" />
                 </div>
-                <h3 className="text-2xl text-[#96031A] font-bold">{category.title}</h3>
+                <h3 className="text-2xl text-[#7f22ff] font-bold">{category.title}</h3>
               </div>
 
               {/* Skills List */}
@@ -117,15 +117,15 @@ export default function Skills() {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-gray-600">{skill.name}</span>
+                      <span className="text-sm font-medium text-gray-300">{skill.name}</span>
                       <span className="text-sm font-medium">
                         {skill.percentage}%
                       </span>
                     </div>
                     {/* Progress Bar */}
-                    <div className="w-full bg-white rounded-full h-2">
+                    <div className="w-full bg-gray-700 rounded-full h-2">
                       <div
-                        className="progress-bar-fill bg-black rounded-full h-2"
+                        className="progress-bar-fill bg-white rounded-full h-2"
                         data-percentage={skill.percentage}
                         style={{ width: "0%" }}
                       ></div>

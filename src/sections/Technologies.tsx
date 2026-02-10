@@ -45,10 +45,6 @@ export default function Technologies() {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     },
     {
-      name: "AWS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
-    },
-    {
       name: "Spring Boot",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
     },
@@ -67,7 +63,7 @@ export default function Technologies() {
   ];
 
   return (
-    <section id="technologies" className="animate-section text-black py-16 px-8">
+    <section id="technologies" className="animate-section text-[#FAFAFA] py-16 px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header with large title */}
         <div className="relative mb-20">
@@ -85,7 +81,7 @@ export default function Technologies() {
 
         {/* Tech Stack Title with Blue Underline */}
         {/* <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold text-black mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#FAFAFA] mb-4">
             Tech Stack
           </h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
@@ -127,7 +123,7 @@ export default function Technologies() {
 
         {/* Footer Text */}
         {/* <div className="text-center">
-          <p className="text-gray-600 text-sm md:text-base">
+          <p className="text-gray-300 text-sm md:text-base">
             I constantly try to improve my stack.
           </p>
         </div> */}

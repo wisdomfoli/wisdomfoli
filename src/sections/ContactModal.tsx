@@ -52,7 +52,7 @@ export default function ContactModal() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="contact-button cursor-pointer fixed bottom-8 right-8 w-16 h-16 bg-[#96031A] text-white rounded-full shadow-lg hover:bg-[#96031A]/80 transition-all duration-300 flex items-center justify-center z-50"
+        className="contact-button cursor-pointer fixed bottom-8 right-8 w-16 h-16 bg-[#7f22ff] text-white rounded-full shadow-lg hover:bg-[#7f22ff]/80 transition-all duration-300 flex items-center justify-center z-50"
         style={{ opacity: 0, transform: 'scale(0)' }}
         aria-label="Ouvrir le formulaire de contact"
       >
@@ -68,12 +68,12 @@ export default function ContactModal() {
           {/* Modal Content - Positioned near the button */}
           <div
             ref={modalRef}
-            className="fixed bottom-24 right-8 bg-white rounded-2xl shadow-2xl max-w-[350px] w-full max-h-[80vh] overflow-y-auto z-50"
+            className="fixed bottom-24 right-8 bg-[#111111] rounded-2xl shadow-2xl max-w-[350px] w-full max-h-[80vh] overflow-y-auto z-50"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
-            <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between rounded-t-2xl">
-              <h2 className="text-2xl font-bold">Contactez-moi</h2>
+            <div className="sticky top-0 bg-[#111111] border-b border-gray-600 px-6 py-4 flex items-center justify-between rounded-t-2xl">
+              <h2 className="text-2xl font-bold text-[#FAFAFA]">Contactez-moi</h2>
               {/* <button
                 onClick={() => setIsOpen(false)}
                 className="p-2 hover:bg-gray-100 rounded-full transition-colors"
@@ -163,7 +163,7 @@ export default function ContactModal() {
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      className="cursor-pointer w-full px-8 py-3 bg-[#96031A] text-white rounded-full font-medium hover:bg-[#96031A]/80 transition-colors flex items-center justify-center gap-2"
+                      className="cursor-pointer w-full px-8 py-3 bg-[#7f22ff] text-white rounded-full font-medium hover:bg-[#7f22ff]/80 transition-colors flex items-center justify-center gap-2"
                     >
                       <Send className="w-5 h-5 text-white" />
                       Envoyer le message
