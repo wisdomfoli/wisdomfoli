@@ -1,4 +1,4 @@
-import { UserRound, Clock, Headphones, Twitter, Facebook, Instagram, Download, Send } from "lucide-react";
+import { UserRound, Clock, Headphones, Twitter, Facebook, Instagram, Send } from "lucide-react";
 import arrowRightUp from "../assets/icons/arrow_right_up.png";
 
 export default function Contact() {

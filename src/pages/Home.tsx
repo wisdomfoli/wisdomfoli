@@ -4,11 +4,8 @@ import Skills from "../sections/Skills";
 import Technologies from "../sections/Technologies";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
-import Projects from "../sections/Projects";
 import Contact from "../sections/Contact";
-import ContactModal from "../sections/ContactModal";
 import Footer from "../sections/Footer";
-import { useSmoothScroll } from "../hooks/useSmoothScroll";
 import { usePageAnimations } from "../hooks/usePageAnimations";
 
 export default function Home() {

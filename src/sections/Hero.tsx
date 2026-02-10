@@ -1,4 +1,3 @@
-import { Instagram, Github, Linkedin, Mail } from "lucide-react";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import meImage from "../assets/images/me_image.jpg";
