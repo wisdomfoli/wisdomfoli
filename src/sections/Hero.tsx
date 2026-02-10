@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
-import meImage from "../assets/images/me_image.JPG";
+import meImage from "../assets/images/me_image.jpg";
 
 export default function Hero() {
   const titles = ["Software Developer", "Web Developer", "FullStack Developer"];
