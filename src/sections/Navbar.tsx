@@ -4,6 +4,7 @@ import ThemeSwitch from "../components/ThemeSwitch";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import profileImage from "../assets/images/me_image.jpg";
+import menuIcon from "../assets/icons/menu.png";
 
 export default function Navbar() {
   const { t } = useTranslation();
@@ -61,7 +62,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar-animate sticky top-2 z-50">
+      <nav className="navbar-animate sticky top-0 md:top-2 z-50 bg-[#1F1F1F] md:bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           {/* Mobile Navbar */}
           <div className="flex md:hidden items-center justify-between">
@@ -77,22 +78,14 @@ export default function Navbar() {
             {/* Hamburger Button */}
             <button
               onClick={() => setIsSidebarOpen(true)}
-              className="p-2 text-white hover:text-primary transition-colors"
+              className="p-2 hover:opacity-80 transition-opacity"
               aria-label="Open menu"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              <img
+                src={menuIcon}
+                alt="Menu"
+                className="w-6 h-6 invert"
+              />
             </button>
           </div>
 
