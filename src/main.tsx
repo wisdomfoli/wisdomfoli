@@ -3,8 +3,10 @@ import { BrowserRouter } from "react-router";
 import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import SplashScreen from "./components/SplashScreen";
+import LanguageRouter from "./components/LanguageRouter";
+import { ProgressProvider } from "./contexts/ProgressContext";
 import "./global.css";
-import './i18n.js';
+import './i18n';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -23,10 +25,12 @@ function App() {
   }, []);
 
   return (
-    <>
-      {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
-      {!showSplash && <Home />}
-    </>
+    <ProgressProvider>
+      <LanguageRouter>
+        {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
+        {!showSplash && <Home />}
+      </LanguageRouter>
+    </ProgressProvider>
   );
 }
 

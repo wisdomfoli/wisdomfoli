@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "technologies": "Technologies",
+    "summary": "Résumé",
+    "projects": "Projets"
+  },
+  "hero": {
+    "greeting": "Hi, je suis Wisdom et je suis un",
+    "titles": {
+      "softwareDeveloper": "Développeur Logiciel",
+      "webDeveloper": "Développeur Web",
+      "fullstackDeveloper": "Développeur FullStack"
+    },
+    "description": "Passionné par le développement d'applications modernes, je suis familier avec les solutions numériques performantes et intuitives adaptées aux vrais besoins des utilisateurs."
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "journey": {
+      "title": "Mon Parcours",
+      "description": "Mon parcours dans le développement logiciel a commencé par la curiosité et un fort désir de construire des solutions numériques utiles. Au fil du temps, j'ai développé des compétences dans les technologies web et mobiles, en me concentrant sur la création d'applications fiables, efficaces et centrées sur l'utilisateur qui résolvent des problèmes du monde réel."
+    },
+    "future": {
+      "title": "Mes Perspectives Futures",
+      "description": "Je vise à élargir continuellement mon expertise technique tout en relevant de nouveaux défis qui me poussent à grandir en tant que développeur. Mon objectif est de contribuer à des projets d'impact qui combinent innovation, performance et utilité dans le monde réel."
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile", 
+      "database": "Base de données et Cloud"
+    }
+  },
+  "technologies": {
+    "title": "Stack Technique"
+  },
+  "resume": {
+    "title": "Expérience",
+    "download": "Télécharger le CV",
+    "experiences": {
+      "thepotentialai": {
+        "date": "Avril 2025 - Décembre 2025",
+        "title": "Développeur Logiciel",
+        "institution": "THEPOTENTIALAI",
+        "description": "Application mobile de transport avec suivi en temps réel et communication basée sur WebSocket."
+      },
+      "highdi": {
+        "date": "Octobre 2024 - Avril 2025",
+        "title": "Stagiaire Développeur d'Applications",
+        "institution": "HIGHDI",
+        "description": "Plateforme e-commerce pour la vente de produits et l'affichage d'articles avec traitement de paiement intégré."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projets", 
+    "items": {
+      "proxygo": {
+        "title": "ProxyGo",
+        "description": "Application mobile de transport avec suivi en temps réel et communication basée sur WebSocket."
+      },
+      "piam": {
+        "title": "Piam",
+        "description": "Plateforme e-commerce pour la vente de produits et l'affichage d'articles avec traitement de paiement intégré."
+      },
+      "mladoctors": {
+        "title": "Mladoctors", 
+        "description": "Site web d'organisation à but non lucratif pour les jeunes professionnels de la santé avec gestion des membres et intégration de paiement."
+      },
+      "meditrack": {
+        "title": "Meditrack",
+        "description": "Système de gestion de clinique complet avec portails fournisseur et patient pour examens, résultats, hospitalisations, pharmacies et assurance."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "reachOut": "Contactez-nous",
+    "description": "Avez-vous une question ou besoin d'aide ? Contactez notre équipe de support dédiée. Nous sommes là pour vous aider avec toutes les questions que vous pourriez avoir.",
+    "features": {
+      "personalizedAssistance": "Assistance personnalisée",
+      "timelyResponse": "Réponse en temps opportun",
+      "comprehensiveSupport": "Support complet"
+    },
+    "form": {
+      "name": "Nom",
+      "email": "Email", 
+      "message": "Message",
+      "sendMessage": "Envoyer le message"
+    }
+  },
+  "contactModal": {
+    "title": "Contactez-moi",
+    "form": {
+      "fullName": "Nom complet",
+      "yourName": "Votre nom",
+      "email": "Email",
+      "yourEmail": "votre@email.com",
+      "subject": "Sujet",
+      "messageSubject": "Sujet du message", 
+      "message": "Message",
+      "yourMessage": "Votre message...",
+      "sendMessage": "Envoyer le message"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2026 Wisdom. Tous droits réservés."
+  },
+  "theme": {
+    "lightMode": "Activer le mode clair",
+    "darkMode": "Désactiver le mode sombre",
+    "lightIcon": "Icône mode clair", 
+    "darkIcon": "Icône mode sombre"
+  }
+}

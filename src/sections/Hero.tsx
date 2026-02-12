@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
+import { useTranslation } from "react-i18next";
 import meImage from "../assets/images/me_image.jpg";
 
 export default function Hero() {
-  const titles = ["Software Developer", "Web Developer", "FullStack Developer"];
+  const { t } = useTranslation();
+  const titles = [t("hero.titles.softwareDeveloper"), t("hero.titles.webDeveloper"), t("hero.titles.fullstackDeveloper")];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -52,40 +54,40 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="text-[#FAFAFA] min-h-screen relative overflow-hidden"
+      className="text-[#FAFAFA] relative overflow-hidden"
     >
+      {/* Ambient glow */}
+      {/* <div className="absolute -top-40 right-0 size-112 rounded-full bg-primary/15 blur-[120px]" />
+      <div className="absolute -bottom-40 left-0 size-96 rounded-full bg-secondary/15 blur-[120px]" /> */}
 
       {/* Main Content */}
-      <div className="hero-content max-w-7xl mx-auto px-8 py-16 relative">
+      <div className="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 relative">
         {/* Headline */}
         <div className="text-center mb-8 relative">
           <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-px bg-gray-300 flex-1 max-w-32"></div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">
-              <span className="">Hi I'm Wisdom & I'm A</span>{" "}
-              <span className="text-[#7f22ff] px-4 py-2 rounded-lg inline-block min-w-[300px] md:min-w-[400px] text-center">
+            <div className="h-px bg-gray-300/60 flex-1 max-w-24 sm:max-w-32"></div>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+              <span>{t("hero.greeting")}</span>{" "}
+              <span className="text-primary px-4 py-2 rounded-lg inline-block min-w-60 sm:min-w-75 md:min-w-100 text-center">
                 <span className="animated-title">
                   {displayedText}
                   <span className="animate-pulse">|</span>
                 </span>
               </span>{" "}
             </h1>
-            <div className="h-px bg-gray-300 flex-1 max-w-32"></div>
+            <div className="h-px bg-gray-300/60 flex-1 max-w-24 sm:max-w-32"></div>
           </div>
         </div>
 
         {/* Description */}
-        <p className="text-center text-white max-w-2xl mx-auto mb-8 text-lg">
-          Passionate about developing modern applications, I am familiar with
-          high-performing, intuitive digital solutions tailored to the real
-          needs of users.
+        <p className="text-center text-white max-w-2xl mx-auto mb-10 text-base sm:text-lg">
+          {t("hero.description")}
         </p>
 
-        {/* Profile Image and Testimonials */}
-        <div className="relative flex items-center justify-center min-h-[400px]">
-          {/* Center Profile Image */}
+        {/* Profile Image */}
+        <div className="relative flex items-center justify-center min-h-80 sm:min-h-100">
           <div className="relative z-0">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gray-300 overflow-hidden mx-auto">
+            <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full bg-gray-300/80 overflow-hidden mx-auto">
               <img
                 src={meImage}
                 alt="Profile"

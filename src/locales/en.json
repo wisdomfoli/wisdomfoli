@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "technologies": "Technologies",
+    "summary": "Summary",
+    "projects": "Projects"
+  },
+  "hero": {
+    "greeting": "Hi I'm Wisdom & I'm A",
+    "titles": {
+      "softwareDeveloper": "Software Developer",
+      "webDeveloper": "Web Developer", 
+      "fullstackDeveloper": "FullStack Developer"
+    },
+    "description": "Passionate about developing modern applications, I am familiar with high-performing, intuitive digital solutions tailored to the real needs of users."
+  },
+  "about": {
+    "title": "About Me",
+    "journey": {
+      "title": "My Journey",
+      "description": "My journey into software development began with curiosity and a strong desire to build useful digital solutions. Over time, I have developed skills in web and mobile technologies, focusing on creating reliable, efficient, and user-centered applications that solve real-world problems."
+    },
+    "future": {
+      "title": "My Future Perspectives",
+      "description": "I aim to continuously expand my technical expertise while taking on new challenges that push me to grow as a developer. My goal is to contribute to impactful projects that combine innovation, performance, and real-world usefulness."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend", 
+      "mobile": "Mobile",
+      "database": "Database & Cloud"
+    }
+  },
+  "technologies": {
+    "title": "Tech Stack"
+  },
+  "resume": {
+    "title": "Experience",
+    "download": "Download CV",
+    "experiences": {
+      "thepotentialai": {
+        "date": "April 2025 - December 2025",
+        "title": "Software Developer",
+        "institution": "THEPOTENTIALAI",
+        "description": "Mobile transportation application with real-time tracking and WebSocket-based communication."
+      },
+      "highdi": {
+        "date": "October 2024 - April 2025", 
+        "title": "Application Developer Intern",
+        "institution": "HIGHDI",
+        "description": "E-commerce platform for product sales and article listings with integrated payment processing."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "items": {
+      "proxygo": {
+        "title": "ProxyGo",
+        "description": "Mobile transportation application with real-time tracking and WebSocket-based communication."
+      },
+      "piam": {
+        "title": "Piam", 
+        "description": "E-commerce platform for product sales and article listings with integrated payment processing."
+      },
+      "mladoctors": {
+        "title": "Mladoctors",
+        "description": "Non-profit organization website for young healthcare professionals with membership management and payment integration."
+      },
+      "meditrack": {
+        "title": "Meditrack",
+        "description": "Comprehensive clinic management system with provider and patient portals for exams, results, hospitalizations, pharmacies, and insurance."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "reachOut": "Reach out",
+    "description": "Have a question or need assistance? Reach out to our dedicated support team. We're here to help with any inquiries you may have.",
+    "features": {
+      "personalizedAssistance": "Personalized assistance",
+      "timelyResponse": "Timely response", 
+      "comprehensiveSupport": "Comprehensive support"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "sendMessage": "Send Message"
+    }
+  },
+  "contactModal": {
+    "title": "Contact Me",
+    "form": {
+      "fullName": "Full Name",
+      "yourName": "Your name",
+      "email": "Email", 
+      "yourEmail": "your@email.com",
+      "subject": "Subject",
+      "messageSubject": "Message subject",
+      "message": "Message",
+      "yourMessage": "Your message...",
+      "sendMessage": "Send Message"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2026 Wisdom. All rights reserved."
+  },
+  "theme": {
+    "lightMode": "Enable light mode",
+    "darkMode": "Disable dark mode",
+    "lightIcon": "Light mode icon",
+    "darkIcon": "Dark mode icon"
+  }
+}

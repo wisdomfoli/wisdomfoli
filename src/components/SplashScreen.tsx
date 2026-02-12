@@ -64,39 +64,19 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
     // Wait a bit with loading dots
     timeline.to({}, { duration: 2.5 });
 
-    // Exit animation: scale down and fade out
-    timeline.to(".splash-container", {
-      scale: 0.8,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power3.in",
+    // Stop loading animation
+    timeline.call(() => {
+      if (loadingTimelineRef.current) {
+        loadingTimelineRef.current.kill();
+      }
     });
 
-    // Exit animation for name letters
-    timeline.to(
-      letters,
-      {
-        opacity: 0,
-        scale: 0.8,
-        duration: 0.6,
-        stagger: 0.05,
-        ease: "power2.in",
-      },
-      "<"
-    );
-
-    // Exit animation for loading dots
-    timeline.to(
-      ".loading-dot",
-      {
-        scale: 0,
-        opacity: 0,
-        duration: 0.4,
-        stagger: 0.05,
-        ease: "power2.in",
-      },
-      "<"
-    );
+    // Simple fade out transition
+    timeline.to(".splash-container", {
+      opacity: 0,
+      duration: 0.6,
+      ease: "power2.out",
+    });
 
     timeline.call(() => {
       if (loadingTimelineRef.current) {
@@ -123,7 +103,7 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
           <span
             key={index}
             id={`letter-${index}`}
-            className="letter text-7xl md:text-8xl lg:text-9xl font-bold text-[#7f22ff]"
+            className="letter text-7xl md:text-8xl lg:text-9xl font-bold text-primary"
             style={{
               display: "inline-block",
             }}
@@ -132,13 +112,13 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
           </span>
         ))}
       </div>
-      
+
       {showLoading && (
         <div className="flex items-center justify-center gap-3 mt-4">
           {[0, 1, 2].map((index) => (
             <span
               key={index}
-              className="loading-dot w-4 h-4 bg-[#7f22ff] rounded-full opacity-0"
+              className="loading-dot w-4 h-4 bg-primary rounded-full opacity-0"
               style={{
                 transform: "scale(0)",
               }}
@@ -149,4 +129,3 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
     </div>
   );
 }
-

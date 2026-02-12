@@ -2,15 +2,17 @@ import { Code, Server, Smartphone, Cloud } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Skills() {
+  const { t } = useTranslation();
   const sectionRef = useRef<HTMLElement>(null);
   const skillCategories = [
     {
       icon: Code,
-      title: "Frontend",
+      title: t("skills.categories.frontend"),
       skills: [
         { name: "HTML5 / CSS3", percentage: 90 },
         { name: "JavaScript / TypeScript", percentage: 85 },
@@ -20,7 +22,7 @@ export default function Skills() {
     },
     {
       icon: Server,
-      title: "Backend",
+      title: t("skills.categories.backend"),
       skills: [
         { name: "Django", percentage: 80 },
         { name: "Spring Boot", percentage: 70 },
@@ -29,7 +31,7 @@ export default function Skills() {
     },
     {
       icon: Smartphone,
-      title: "Mobile",
+      title: t("skills.categories.mobile"),
       skills: [
         { name: "Expo React Native", percentage: 85 },
         { name: "iOS / Swift", percentage: 0 },
@@ -38,7 +40,7 @@ export default function Skills() {
     },
     {
       icon: Cloud,
-      title: "Database & Cloud",
+      title: t("skills.categories.database"),
       skills: [
         { name: "PostgreSQL", percentage: 80 },
         { name: "MySql", percentage: 70 },
@@ -85,16 +87,14 @@ export default function Skills() {
   }, []);
 
   return (
-    <section ref={sectionRef} id="skills" className="animate-section text-[#FAFAFA] py-16 px-8">
+    <section ref={sectionRef} id="skills" className="animate-section text-[#FAFAFA] py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header with large title */}
-        <div className="relative mb-20">
-          {/* <h1 className="text-6xl md:text-6xl font-bold relative z-10">
-            Skills
-          </h1> */}
-          <h2 className="shine-effect text-5xl md:text-5xl font-bold absolute top-0 left-0 -z-0">
-            Skills
+        <div className="relative mb-16 sm:mb-20">
+          <h2 className="shine-effect text-4xl sm:text-5xl md:text-5xl font-bold absolute top-0 left-0 z-0">
+            {t("skills.title")}
           </h2>
+          <div className="h-10 sm:h-12" />
         </div>
 
         {/* Skills Grid */}
@@ -102,14 +102,14 @@ export default function Skills() {
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-[#111111] rounded-lg p-6 border border-gray-600"
+              className="animate-card glass-card rounded-2xl p-6 border border-white/10"
             >
               {/* Icon and Title */}
               <div className="mb-6">
                 <div className="mb-3">
-                  <category.icon className="size-8 text-[#7f22ff]" />
+                  <category.icon className="size-8 text-primary" />
                 </div>
-                <h3 className="text-2xl text-[#7f22ff] font-bold">{category.title}</h3>
+                <h3 className="text-xl sm:text-2xl text-primary font-bold">{category.title}</h3>
               </div>
 
               {/* Skills List */}
@@ -117,13 +117,13 @@ export default function Skills() {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-gray-300">{skill.name}</span>
-                      <span className="text-sm font-medium">
+                      <span className="text-sm font-medium text-white/70">{skill.name}</span>
+                      <span className="text-sm font-medium text-white/80">
                         {skill.percentage}%
                       </span>
                     </div>
                     {/* Progress Bar */}
-                    <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="w-full bg-white/10 rounded-full h-2">
                       <div
                         className="progress-bar-fill bg-white rounded-full h-2"
                         data-percentage={skill.percentage}

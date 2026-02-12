@@ -4,8 +4,10 @@ import mongodbIcon from "../assets/icons/mongodb.svg";
 import postgresqlIcon from "../assets/icons/postgresql.svg";
 import dockerIcon from "../assets/icons/docker.svg";
 import gitIcon from "../assets/icons/git.svg";
+import { useTranslation } from "react-i18next";
 
 export default function Technologies() {
+  const { t } = useTranslation();
   const technologies = [
     {
       name: "React",
@@ -70,13 +72,14 @@ export default function Technologies() {
   ];
 
   return (
-    <section id="technologies" className="animate-section text-[#FAFAFA] py-16 px-8">
+    <section id="technologies" className="animate-section text-[#FAFAFA] py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header with large title */}
-        <div className="relative mb-20">
-          <h2 className="shine-effect text-5xl md:text-5xl font-bold absolute top-0 left-0 -z-0">
-            Tech Stack
+        <div className="relative mb-16 sm:mb-20">
+          <h2 className="shine-effect text-4xl sm:text-5xl md:text-5xl font-bold absolute top-0 left-0 z-0">
+            {t("technologies.title")}
           </h2>
+          <div className="h-10 sm:h-12" />
         </div>
 
         {/* My Arsenal Button */}
@@ -95,13 +98,13 @@ export default function Technologies() {
         </div> */}
 
         {/* Technologies Grid - Two Rows */}
-        <div className="flex flex-col gap-12 mb-16">
+        <div className="flex flex-col gap-10 sm:gap-12 mb-8">
           {/* First Row */}
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             {technologies.slice(0, 11).map((tech, index) => (
               <div
                 key={index}
-                className="group flex items-center justify-center size-14 transition-transform duration-300 hover:scale-110"
+                className="group flex items-center justify-center size-12 sm:size-14 transition-transform duration-300 hover:scale-110"
               >
                 <img
                   src={tech.icon}
@@ -112,11 +115,11 @@ export default function Technologies() {
             ))}
           </div>
           {/* Second Row */}
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             {technologies.slice(11).map((tech, index) => (
               <div
                 key={index + 11}
-                className="group flex items-center justify-center size-18 transition-transform duration-300 hover:scale-110"
+                className="group flex items-center justify-center size-12 sm:size-14 transition-transform duration-300 hover:scale-110"
               >
                 <img
                   src={tech.icon}

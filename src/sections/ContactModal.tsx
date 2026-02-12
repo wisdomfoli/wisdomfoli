@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { Send, MessageCircle } from "lucide-react";
 import { gsap } from "gsap";
+import { useTranslation } from "react-i18next";
 
 export default function ContactModal() {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -52,7 +54,7 @@ export default function ContactModal() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="contact-button cursor-pointer fixed bottom-8 right-8 w-16 h-16 bg-[#7f22ff] text-white rounded-full shadow-lg hover:bg-[#7f22ff]/80 transition-all duration-300 flex items-center justify-center z-50"
+        className="contact-button cursor-pointer fixed bottom-8 right-8 w-16 h-16 bg-primary text-white rounded-full shadow-lg hover:bg-primary/80 transition-all duration-300 flex items-center justify-center z-50"
         style={{ opacity: 0, transform: 'scale(0)' }}
         aria-label="Ouvrir le formulaire de contact"
       >
@@ -73,7 +75,7 @@ export default function ContactModal() {
           >
             {/* Modal Header */}
             <div className="sticky top-0 bg-[#111111] border-b border-gray-600 px-6 py-4 flex items-center justify-between rounded-t-2xl">
-              <h2 className="text-2xl font-bold text-[#FAFAFA]">Contactez-moi</h2>
+              <h2 className="text-2xl font-bold text-[#FAFAFA]">{t("contactModal.title")}</h2>
               {/* <button
                 onClick={() => setIsOpen(false)}
                 className="p-2 hover:bg-gray-100 rounded-full transition-colors"
@@ -94,7 +96,7 @@ export default function ContactModal() {
                         htmlFor="modal-name"
                         className="block text-sm font-medium text-gray-700 mb-2"
                       >
-                        Nom complet
+                        {t("contactModal.form.fullName")}
                       </label>
                       <input
                         type="text"
@@ -102,7 +104,7 @@ export default function ContactModal() {
                         name="name"
                         required
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                        placeholder="Votre nom"
+                        placeholder={t("contactModal.form.yourName")}
                       />
                     </div>
 
@@ -112,7 +114,7 @@ export default function ContactModal() {
                         htmlFor="modal-email"
                         className="block text-sm font-medium text-gray-700 mb-2"
                       >
-                        Email
+                        {t("contactModal.form.email")}
                       </label>
                       <input
                         type="email"
@@ -120,7 +122,7 @@ export default function ContactModal() {
                         name="email"
                         required
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                        placeholder="votre@email.com"
+                        placeholder={t("contactModal.form.yourEmail")}
                       />
                     </div>
 
@@ -130,7 +132,7 @@ export default function ContactModal() {
                         htmlFor="modal-subject"
                         className="block text-sm font-medium text-gray-700 mb-2"
                       >
-                        Sujet
+                        {t("contactModal.form.subject")}
                       </label>
                       <input
                         type="text"
@@ -138,7 +140,7 @@ export default function ContactModal() {
                         name="subject"
                         required
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                        placeholder="Sujet du message"
+                        placeholder={t("contactModal.form.messageSubject")}
                       />
                     </div>
 
@@ -148,7 +150,7 @@ export default function ContactModal() {
                         htmlFor="modal-message"
                         className="block text-sm font-medium text-gray-700 mb-2"
                       >
-                        Message
+                        {t("contactModal.form.message")}
                       </label>
                       <textarea
                         id="modal-message"
@@ -156,17 +158,17 @@ export default function ContactModal() {
                         required
                         rows={4}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
-                        placeholder="Votre message..."
+                        placeholder={t("contactModal.form.yourMessage")}
                       />
                     </div>
 
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      className="cursor-pointer w-full px-8 py-3 bg-[#7f22ff] text-white rounded-full font-medium hover:bg-[#7f22ff]/80 transition-colors flex items-center justify-center gap-2"
+                      className="cursor-pointer w-full px-8 py-3 bg-primary text-white rounded-full font-medium hover:bg-primary/80 transition-colors flex items-center justify-center gap-2"
                     >
                       <Send className="w-5 h-5 text-white" />
-                      Envoyer le message
+                      {t("contactModal.form.sendMessage")}
                     </button>
                   </form>
             </div>

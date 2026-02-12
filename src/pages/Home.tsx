@@ -6,6 +6,7 @@ import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
+import Projects from "../sections/Projects";
 import { usePageAnimations } from "../hooks/usePageAnimations";
 
 export default function Home() {
@@ -20,9 +21,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Resume />
       <Skills />
       <Technologies />
+      <Resume />
+      
+      <Projects />
+      
       <Contact />
       <Footer />
     </>
