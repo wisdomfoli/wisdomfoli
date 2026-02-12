@@ -61,7 +61,7 @@ export default function Hero() {
       <div className="absolute -bottom-40 left-0 size-96 rounded-full bg-secondary/15 blur-[120px]" /> */}
 
       {/* Main Content */}
-      <div className="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 relative">
+      <div className="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 relative">
         {/* Headline */}
         <div className="text-center mb-8 relative">
           <div className="flex items-center justify-center gap-4 mb-4">

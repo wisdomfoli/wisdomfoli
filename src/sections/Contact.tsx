@@ -10,10 +10,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="animate-section text-[#FAFAFA] py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="animate-section text-[#FAFAFA] py-12 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section title like other sections */}
-        <div className="relative mb-16 sm:mb-20">
+        <div className="relative mb-10 sm:mb-16 lg:mb-20">
           <h2 className="shine-effect text-4xl sm:text-5xl md:text-5xl font-bold absolute top-0 left-0 z-0">
             {t("contact.title")}
           </h2>
