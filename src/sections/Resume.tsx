@@ -1,6 +1,6 @@
 import { Download } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import cvPdf from "../assets/files/Wisdom's Cv.pdf";
+import cvPdf from "../assets/files/wisdomfoli_cv.pdf";
 
 export default function Resume() {
   const { t } = useTranslation();
@@ -95,7 +95,7 @@ export default function Resume() {
         <div className="flex justify-start mt-12">
           <a
             href={cvPdf}
-            download="Wisdom Foli CV.pdf"
+            download="wisdomfoli_cv.pdf"
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-white rounded-full hover:bg-primary/80 transition-colors font-medium text-base sm:text-lg"
           >
             <Download className="w-5 h-5" />
