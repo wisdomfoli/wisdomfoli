@@ -2,7 +2,6 @@ import Resume from "../sections/Resume";
 import Navbar from "../sections/Navbar";
 import Skills from "../sections/Skills";
 import Technologies from "../sections/Technologies";
-import Hero from "../sections/NewHero"
 import About from "../sections/About";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
