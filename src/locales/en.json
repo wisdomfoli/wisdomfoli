@@ -14,7 +14,13 @@
       "webDeveloper": "Web Developer", 
       "fullstackDeveloper": "FullStack Developer"
     },
-    "description": "Passionate about developing modern applications, I am familiar with high-performing, intuitive digital solutions tailored to the real needs of users."
+    "description": "Passionate about developing modern applications, I am familiar with high-performing, intuitive digital solutions tailored to the real needs of users.",
+    "scheduleCall": "Schedule a Call",
+    "stats": {
+      "yearsExperience": "Years of Experience",
+      "projectsDone": "Projects Done",
+      "satisfiedClients": "Satisfied Clients"
+    }
   },
   "about": {
     "title": "About Me",

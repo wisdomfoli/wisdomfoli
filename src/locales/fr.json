@@ -14,7 +14,13 @@
       "webDeveloper": "Développeur Web",
       "fullstackDeveloper": "Développeur FullStack"
     },
-    "description": "Passionné par le développement d'applications modernes, je suis familier avec les solutions numériques performantes et intuitives adaptées aux vrais besoins des utilisateurs."
+    "description": "Passionné par le développement d'applications modernes, je suis familier avec les solutions numériques performantes et intuitives adaptées aux vrais besoins des utilisateurs.",
+    "scheduleCall": "Planifier un appel",
+    "stats": {
+      "yearsExperience": "Années d'Expérience",
+      "projectsDone": "Projets Réalisés",
+      "satisfiedClients": "Clients Satisfaits"
+    }
   },
   "about": {
     "title": "À Propos de Moi",
